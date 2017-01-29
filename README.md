@@ -21,7 +21,7 @@ npm run build
 
 For a detailed explanation of the build process, read the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-You may need a .babelrc and . file in the root directory. Try:
+You may need a .babelrc and .eslintrc.js file in the root directory. Try:
 
 .babelrc
 ``` bash
