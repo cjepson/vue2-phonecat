@@ -41,3 +41,32 @@ module.exports = {
   extends: 'standard',
 }
 ```
+
+## Application Directory Layout
+
+```
+content/                  --> resources files
+  img/...                 --> images
+  phones/...              --> JSON objects representing phone details
+src/
+  components/
+    PhoneDetails.vue      --> phone details component
+    PhoneList.vue         --> phone list component
+  fonts/                  --> fonts (make bootstrap CSS happy)
+    ...
+  pages/
+    PhoneDetails.vue      --> component page containing phone details
+    Phones.vue            --> component page containing list of phones
+  store/
+    store.js              --> vuex state manager
+  style/
+    bootstrap.css         --> bootstrap CSS file
+    phonedetails.css      --> CSS for phone details page
+    phones.css            --> CSS for phones page
+  main.js                 --> vue application and router
+favicon.ico               --> empty icon for webserver
+index.html                --> HTML file that sets title and loads vue application
+package.json              --> node.js build/run instructions and package management
+webpack.config.js         --> webpack configuration file
+
+```
