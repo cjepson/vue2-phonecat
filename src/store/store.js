@@ -50,7 +50,6 @@ export default new Vuex.Store({
       var filterFunction = phone => containsString(phone, state.phoneTextFilter)
       var localPhones = state.phones.filter(filterFunction)
 
-      console.log(state.phoneDropDownSort)
       switch (state.phoneDropDownSort) {
         case 'name':
           return localPhones.sort((prev, next) => prev.name.localeCompare(next.name))

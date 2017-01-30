@@ -143,7 +143,6 @@
       // id inserted into the URL.
       fetchPhoneData: function () {
         this.$http.get('../content/phones/' +  this.$route.params.id + '.json').then((response) => {
-          console.log(response.body)
           this.$set(this, 'phone', response.body)
           this.$set(this, 'mainImageUrl', response.body.images[0])
         }, (response) => {
