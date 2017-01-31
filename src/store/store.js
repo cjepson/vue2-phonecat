@@ -7,10 +7,11 @@ Vue.use(Vuex)
 // passed.
 function containsString (phone, str) {
   var key = ''
+  str = str.toLowerCase()
   for (key in phone) {
     if (typeof (phone[key]) === 'object') {
       return containsString(phone[key], str)
-    } else if (JSON.stringify(phone).indexOf(str) !== -1) {
+    } else if (JSON.stringify(phone).toLowerCase().indexOf(str) !== -1) {
       return true
     }
   }
